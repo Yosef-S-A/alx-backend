@@ -45,7 +45,6 @@ class Server:
           the current start index of the return page
         page_size : int
           total page size
-          
         Returns
         -------
         dictionary
