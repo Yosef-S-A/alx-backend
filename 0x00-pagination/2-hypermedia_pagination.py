@@ -35,7 +35,7 @@ class Server:
             return self.dataset()[indexes[0]:indexes[1]]
         except IndexError:
             return []
-      
+
     def get_hyper(self, page: int = 1, page_size: int = 10) -> dict:
         """ return dictionary of information about page size,
         page, data, next page, previous page, total page
