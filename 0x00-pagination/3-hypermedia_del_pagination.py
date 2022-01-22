@@ -38,7 +38,19 @@ class Server:
         return self.__indexed_dataset
 
     def get_hyper_index(self, index: int = None, page_size: int = 10) -> Dict:
-        
+        """Dataset indexed by sorting position, starting at 0
+        Parameters
+        ----------
+        index : int
+          the current start index of the return page
+        page_size : int
+          total page size
+          
+        Returns
+        -------
+        dictionary
+          key-value pairs of index, next index, page size, data
+        """
         dataset = self.indexed_dataset()
         assert type(index) is int and index in range(len(dataset))
         rows = []
