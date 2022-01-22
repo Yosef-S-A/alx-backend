@@ -8,7 +8,7 @@ from typing import List
 
 
 class Server:
-    """ 
+    """ Server class to paginate a database of popular baby names.
     """
     DATA_FILE = "Popular_Baby_Names.csv"
 
@@ -16,7 +16,7 @@ class Server:
         self.__dataset = None
 
     def dataset(self) -> List[List]:
-        """
+        """ Cached dataset
         """
         if self.__dataset is None:
             with open(self.DATA_FILE) as f:
@@ -38,5 +38,19 @@ class Server:
 
 
 def index_range(page: int, page_size: int) -> tuple:
-    """  """
+    """ calculates the start and end index
+    Parameters
+    ----------
+    page : int
+        page number
+    page_size : int
+        page content size
+    Returns
+    -------
+    tuple
+        tuple of size two containing a start index
+        and an end index corresponding
+        to the range of indexes to return in a list for those
+        particular pagination parameters
+    """
     return ((page - 1) * page_size, page * page_size)
