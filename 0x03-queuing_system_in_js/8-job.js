@@ -1,3 +1,13 @@
+/*
+* Parameters
+* ----------
+* jobs (array): array of objects
+* queue (kue)
+* 
+* Return
+* ------
+* returns status of job is created or not
+*/
 function createPushNotificationsJobs(jobs, queue) {
   if (!Array.isArray(jobs)) throw Error('Jobs is not an array');
 
