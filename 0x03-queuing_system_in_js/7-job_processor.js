@@ -4,6 +4,13 @@ import kue from 'kue';
 
 const blacklistedNum = ['4153518780', '4153518781'];
 
+/*
+* Parameters
+* ----------
+* phoneNumber (number)
+* message (string)
+* job (string)
+*/
 function sendNotification(phoneNumber, message, job, done) {
   const total = 100;
 
