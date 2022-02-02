@@ -1,3 +1,5 @@
+// Node Redis client and basic operations
+
 import redis from 'redis';
 
 const client = redis.createClient();
