@@ -1,3 +1,5 @@
+// Node Redis client publisher and subscriber
+
 import redis from 'redis';
 
 const subscriber = redis.createClient();
