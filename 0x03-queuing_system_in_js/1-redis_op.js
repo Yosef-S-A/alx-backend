@@ -11,7 +11,7 @@ client.on('connect', () => {
 });
 
 function setNewSchool(schoolName, value) {
-  client.set(schoolName, value, redis.print)
+  client.set(schoolName, value, redis.print);
 }
 
 function displaySchoolValue(schoolName) {
@@ -22,4 +22,4 @@ function displaySchoolValue(schoolName) {
 
 displaySchoolValue('Holberton');
 setNewSchool('HolbertonSanFrancisco', '100');
-displaySchoolValue('HolertonSanFrancisco');
+displaySchoolValue('HolbertonSanFrancisco');
