@@ -1,3 +1,4 @@
+// Create the Job processor
 import kue from 'kue';
 
 const queue = kue.createQueue();
